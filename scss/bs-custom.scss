@@ -1,13 +1,60 @@
 // Your variable overrides
-$body-bg: rgb(171, 136, 136);
+$body-bg: rgb(255, 255, 255);
+$primarycol-1: #642CA9;
+$primarycol-2: #CA9CE1;
+$primarycol-3: #F2BEFC;
+$primarycol-4: #EAD5E6;
+$primarycol-5: #85C7F2;
+
 $body-color: #111;
+
+@font-face {
+    font-family: defFont;
+    src: url(fonts/Lato-Regular.ttf);
+}
+@font-face {
+    font-family: regNunito;
+    src: url(fonts/Nunito-Regular.ttf);
+}
+@font-face {
+    font-family: boldNunito;
+    src: url(fonts/Nunito-ExtraBold.ttf);
+    font-weight: bold;
+}
+
 // Bootstrap and its default variables
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 body{
     background-color: $body-bg;
-    
-    h1{
-        text-align: center;
+    aside{
+        background-color: green;
+        hr{
+            color: $primarycol-3;
+            background-color: $primarycol-3;
+            border: 2px solid;
+            border-radius: 7px 7px 7px 7px;
+            height: 2px;
+            opacity: 1;
+        }
+
+        ul{
+            li{
+                margin-bottom: 1rem;
+            }
+        }
+    }
+
+    main{
+        background-color: red;
+    }
+
+    #profilePic{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        outline-width: 4px;
+        outline-style: solid;
+        outline-color: $primarycol-3;
     }
 }
