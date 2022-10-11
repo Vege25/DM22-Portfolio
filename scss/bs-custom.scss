@@ -27,16 +27,18 @@ $body-color: #111;
 
 body{
     background-color: $body-bg;
-    aside{
+    
+    hr{
+        color: $primarycol-3;
+        background-color: $primarycol-3;
+        border: 2px solid;
+        border-radius: 7px 7px 7px 7px;
+        height: 2px;
+        opacity: 1;
+    }
+    header{
         background-color: green;
-        hr{
-            color: $primarycol-3;
-            background-color: $primarycol-3;
-            border: 2px solid;
-            border-radius: 7px 7px 7px 7px;
-            height: 2px;
-            opacity: 1;
-        }
+        
 
         ul{
             li{
