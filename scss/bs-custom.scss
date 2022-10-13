@@ -1,60 +1,104 @@
 // Your variable overrides
 $body-bg: rgb(255, 255, 255);
-$primarycol-1: #642CA9;
-$primarycol-2: #CA9CE1;
-$primarycol-3: #F2BEFC;
-$primarycol-4: #EAD5E6;
-$primarycol-5: #85C7F2;
+$primarycol-1: #642ca9;
+$primarycol-2: #ca9ce1;
+$primarycol-3: #f2befc;
+$primarycol-4: #ead5e6;
+$primarycol-5: #85c7f2;
 
 $body-color: #111;
 
 @font-face {
-    font-family: defFont;
-    src: url(fonts/Lato-Regular.ttf);
+  font-family: defFont;
+  src: url(fonts/Lato-Regular.ttf);
 }
 @font-face {
-    font-family: regNunito;
-    src: url(fonts/Nunito-Regular.ttf);
+  font-family: regNunito;
+  src: url(fonts/Nunito-Regular.ttf);
 }
 @font-face {
-    font-family: boldNunito;
-    src: url(fonts/Nunito-ExtraBold.ttf);
-    font-weight: bold;
+  font-family: boldNunito;
+  src: url(fonts/Nunito-ExtraBold.ttf);
+  font-weight: bold;
 }
 
 // Bootstrap and its default variables
 @import "../node_modules/bootstrap/scss/bootstrap";
 
-body{
-    background-color: $body-bg;
-    aside{
-        background-color: green;
-        hr{
-            color: $primarycol-3;
-            background-color: $primarycol-3;
-            border: 2px solid;
-            border-radius: 7px 7px 7px 7px;
-            height: 2px;
-            opacity: 1;
-        }
-
-        ul{
-            li{
-                margin-bottom: 1rem;
-            }
-        }
+body {
+  background-color: $body-bg;
+  aside {
+    text-align: center;
+    background-color: green;
+    hr {
+      color: $primarycol-3;
+      background-color: $primarycol-3;
+      border: 2px solid;
+      border-radius: 7px 7px 7px 7px;
+      height: 2px;
+      opacity: 1;
     }
 
-    main{
-        background-color: red;
+    ul {
+      li {
+        margin-bottom: 1rem;
+        font-size: 1.25rem;
+      }
+    }
+  }
+  //---------------------------------------------------------------------------------------//
+  header {
+    #navbarSupportedContent {
+      text-align: center;
     }
 
-    #profilePic{
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        outline-width: 4px;
-        outline-style: solid;
-        outline-color: $primarycol-3;
+    hr {
+      color: $primarycol-3;
+      background-color: $primarycol-3;
+      border: 2px solid;
+      border-radius: 7px 7px 7px 7px;
+      height: 2px;
+      opacity: 1;
+      margin: 0px;
     }
+    .navbar-toggler {
+      color: #00000000;
+    }
+    .navbar-toggler.collapsed {
+      color: #00000000;
+    }
+    .navbar-toggler:hover {
+      color: $primarycol-3;
+    }
+    .navbar-toggler:active {
+      color: $primarycol-1;
+    }
+    ul {
+      li {
+        font-size: 1.25rem;
+      }
+    }
+  }
+
+  //------------------------------------------------------------------------------------------//
+
+  main {
+    background-color: red;
+  }
+
+  #profilePic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    outline-width: 4px;
+    outline-style: solid;
+    outline-color: $primarycol-3;
+  }
+}
+
+.nav-link {
+  color: white;
+}
+.nav-link:hover {
+  color: $primarycol-3;
 }
