@@ -1,7 +1,7 @@
 // When website loads navbar script hide one navbar depending of the current window size
 if (window.innerWidth < 576) {
   $("#sidebar").removeClass("active-nav");
-  $(".my-container").removeClass("active-cont");
+  $(".my-container").removeClass("active-cont"); // TODO the bar still shows
   $("#navbar2").show();
   $("#navbar1").hide();
   $("#side-menu-btn").hide();
