@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <title>Portfolio | Veeti Sorakivi</title>
     <script src="js/jquery-3.6.1.js" defer></script>
     <link rel="stylesheet" href="css/bs-custom.css" />
     <script
@@ -20,13 +20,20 @@
     <nav>
       <aside id="navbar1">
         <div
-          class="navbar navbar-expand d-flex flex-column aling-items-start"
+          class="navbar navbar-expand d-flex flex-column aling-items-start active-nav"
           id="sidebar"
         >
-          <a href="#" class="navbar-brand text-light mt-5">
-            <h2 class="display-5 font-weight-bold">Veeti Sorakivi</h2>
+          <img
+            id="profilePic"
+            class="bi me-3"
+            src="images/profile.png"
+            alt="Profile image"
+          />
+          <a href="#" class="navbar-brand text-light mt-3 mx-0">
+            <h2 class="">Veeti Sorakivi</h2>
           </a>
-          <ul class="navbar-nav d-flex flex-column mt-5 w-100">
+          <hr />
+          <ul class="navbar-nav d-flex flex-column w-100">
             <li class="nav-item w-100">
               <a href="#" class="nav-link text-light ps-4">Home</a>
             </li>
@@ -38,20 +45,23 @@
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
-                >Tehtävät</a
+                >Tasks</a
               >
-              <ul class="dropdown-menu w-100" aria-labelledby="navbarDropdown">
+              <ul
+                class="dropdown-menu w-100 py-3"
+                aria-labelledby="navbarDropdown"
+              >
                 <li class="dropdown-item">
-                  <a href="#" class="text-light ps-4 p-2">Tehtävä 1</a>
+                  <a href="#" class="ps-4 p-2">Task 1</a>
                 </li>
                 <li class="dropdown-item">
-                  <a href="#" class="text-light ps-4 p-2">Tehtävä 2</a>
+                  <a href="#" class="ps-4 p-2">Task 2</a>
                 </li>
                 <li class="dropdown-item">
-                  <a href="#" class="text-light ps-4 p-2">Tehtävä 3</a>
+                  <a href="#" class="ps-4 p-2">Task 3</a>
                 </li>
                 <li class="dropdown-item">
-                  <a href="#" class="text-light ps-4 p-2">Tehtävä 4</a>
+                  <a href="#" class="ps-4 p-2">Task 4</a>
                 </li>
               </ul>
             </li>
@@ -65,7 +75,7 @@
         </div>
       </aside>
       <header id="navbar2">
-        <div class="navbar navbar-expand-md bg-dark text-white px-2 py-3">
+        <div class="navbar navbar-expand-md text-white px-2 py-3">
           <div class="container-fluid">
             <a
               href="#"
@@ -90,98 +100,150 @@
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <span class="navbar-toggler-icon"></span>
+              <img src="images/hamburger.png" alt="hamburger image" />
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <hr class="my-3" />
               <ul class="navbar-nav me-auto mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Slot one</a>
+                <li class="nav-item w-100">
+                  <a href="#" class="nav-link text-light ps-4">Home</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Slot two</a>
+                <li class="nav-item dropdown w-100">
+                  <a
+                    href="#"
+                    class="nav-link dropdown-toggle text-light ps-4"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    >Tasks</a
+                  >
+                  <ul
+                    class="dropdown-menu w-100 py-3"
+                    aria-labelledby="navbarDropdown"
+                  >
+                    <li class="dropdown-item">
+                      <a href="#" class="ps-4 p-2">Task 1</a>
+                    </li>
+                    <li class="dropdown-item">
+                      <a href="#" class="ps-4 p-2">Task 2</a>
+                    </li>
+                    <li class="dropdown-item">
+                      <a href="#" class="ps-4 p-2">Task 3</a>
+                    </li>
+                    <li class="dropdown-item">
+                      <a href="#" class="ps-4 p-2">Task 4</a>
+                    </li>
+                  </ul>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Slot three</a>
+                <li class="nav-item w-100">
+                  <a href="#" class="nav-link text-light ps-4">Sisältö 3</a>
+                </li>
+                <li class="nav-item w-100">
+                  <a href="#" class="nav-link text-light ps-4">Sisältö 4</a>
                 </li>
               </ul>
             </div>
           </div>
         </div>
-        <hr />
       </header>
     </nav>
-    <main class="p-4 my-container">
-      <button class="btn my-4" id="side-menu-btn">X</button>
-      <h1>Portfolio</h1>
-      <p class="text-dark">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-        Exercitationem, ad modi. Eaque soluta velit sapiente itaque sunt ducimus
-        amet quis aliquam provident! Placeat animi quis ipsum doloremque
-        cupiditate nisi cumque. Doloremque, atque harum cumque aperiam eum
-        perferendis eveniet facilis sint tempore placeat, rem dolorem tempora?
-        Nam ducimus quibusdam laudantium quae voluptates aperiam cumque,
-        voluptatibus natus adipisci ea facere id iste? Est nostrum perspiciatis
-        assumenda illo libero harum esse qui aliquam non sit iste rerum amet,
-        eaque reprehenderit perferendis? Culpa suscipit ducimus atque cumque
-        deserunt est adipisci dolorem, ex dolores at? Ratione omnis aperiam
-        corporis ea non aut, rem obcaecati? Velit qui, provident a ut blanditiis
-        soluta deleniti dolores praesentium maxime dignissimos saepe voluptate
-        sapiente reprehenderit eius fugiat eligendi doloribus deserunt!
-        Explicabo est eos fugit labore consectetur esse rem vel, fuga nobis
-        deleniti at nulla officiis, nesciunt similique eveniet veritatis
-        perferendis cumque perspiciatis architecto cupiditate aspernatur, maxime
-        velit. Quae, molestiae magnam. Tempore, dicta veritatis nobis iste
-        delectus animi placeat saepe quia ipsa nesciunt eaque velit quisquam
-        ipsam architecto, vel quos consequuntur nihil eius voluptatem id,
-        numquam sunt atque. Corporis, vel alias. Pariatur veritatis libero vitae
-        illo facere tenetur mollitia! Ducimus pariatur cum quia placeat, non
-        nihil modi nisi alias ab minus vitae ut eligendi aut officia, voluptates
-        impedit, doloremque beatae est? Quis fugit ut inventore itaque quasi
-        sed, corporis blanditiis non commodi repudiandae aspernatur quia
-        similique, ad, sequi porro! Vel voluptatem suscipit ut quasi est harum
-        quidem ipsa ipsum, vitae quaerat? Commodi facere quaerat adipisci
-        deleniti officia excepturi illo laudantium a omnis incidunt culpa, ullam
-        corrupti delectus quos reprehenderit facilis consequatur fugit quam odit
-        sint non sit eos! Corporis, quia iure. Architecto cupiditate harum fugit
-        iure sit officia. Quasi aspernatur dicta doloremque aliquam nemo
-        reprehenderit corporis? Expedita voluptas doloribus ab numquam! Eius
-        aliquam non dolorum fugit quas sapiente eaque quam vero.
-      </p>
-      <p class="text-dark">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-        Exercitationem, ad modi. Eaque soluta velit sapiente itaque sunt ducimus
-        amet quis aliquam provident! Placeat animi quis ipsum doloremque
-        cupiditate nisi cumque. Doloremque, atque harum cumque aperiam eum
-        perferendis eveniet facilis sint tempore placeat, rem dolorem tempora?
-        Nam ducimus quibusdam laudantium quae voluptates aperiam cumque,
-        voluptatibus natus adipisci ea facere id iste? Est nostrum perspiciatis
-        assumenda illo libero harum esse qui aliquam non sit iste rerum amet,
-        eaque reprehenderit perferendis? Culpa suscipit ducimus atque cumque
-        deserunt est adipisci dolorem, ex dolores at? Ratione omnis aperiam
-        corporis ea non aut, rem obcaecati? Velit qui, provident a ut blanditiis
-        soluta deleniti dolores praesentium maxime dignissimos saepe voluptate
-        sapiente reprehenderit eius fugiat eligendi doloribus deserunt!
-        Explicabo est eos fugit labore consectetur esse rem vel, fuga nobis
-        deleniti at nulla officiis, nesciunt similique eveniet veritatis
-        perferendis cumque perspiciatis architecto cupiditate aspernatur, maxime
-        velit. Quae, molestiae magnam. Tempore, dicta veritatis nobis iste
-        delectus animi placeat saepe quia ipsa nesciunt eaque velit quisquam
-        ipsam architecto, vel quos consequuntur nihil eius voluptatem id,
-        numquam sunt atque. Corporis, vel alias. Pariatur veritatis libero vitae
-        illo facere tenetur mollitia! Ducimus pariatur cum quia placeat, non
-        nihil modi nisi alias ab minus vitae ut eligendi aut officia, voluptates
-        impedit, doloremque beatae est? Quis fugit ut inventore itaque quasi
-        sed, corporis blanditiis non commodi repudiandae aspernatur quia
-        similique, ad, sequi porro! Vel voluptatem suscipit ut quasi est harum
-        quidem ipsa ipsum, vitae quaerat? Commodi facere quaerat adipisci
-        deleniti officia excepturi illo laudantium a omnis incidunt culpa, ullam
-        corrupti delectus quos reprehenderit facilis consequatur fugit quam odit
-        sint non sit eos! Corporis, quia iure. Architecto cupiditate harum fugit
-        iure sit officia. Quasi aspernatur dicta doloremque aliquam nemo
-        reprehenderit corporis? Expedita voluptas doloribus ab numquam! Eius
-        aliquam non dolorum fugit quas sapiente eaque quam vero.
-      </p>
+    <main class="my-container active-cont">
+      <div class="menu-button-container">
+        <button class="btn" id="side-menu-btn"></button>
+      </div>
+      <section class="welcome-section">
+        <hr />
+        <div class="welcome-texts">
+          <h3>Welcome to</h3>
+          <h1>MY PORTFOLIO</h1>
+          <h2>Veeti Sorakivi</h2>
+        </div>
+        <hr />
+      </section>
+      <hr class="welcome-hr" />
+      <div class="container-fluid">
+        <div class="row">
+          <section class="section2 col-12">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Exercitationem, ad modi. Eaque soluta velit sapiente itaque sunt
+              ducimus amet quis aliquam provident! Placeat animi quis ipsum
+              doloremque cupiditate nisi cumque. Doloremque, atque harum cumque
+              aperiam eum perferendis eveniet facilis sint tempore placeat, rem
+              dolorem tempora? Nam ducimus quibusdam laudantium quae voluptates
+              aperiam cumque, voluptatibus natus adipisci ea facere id iste? Est
+              nostrum perspiciatis assumenda illo libero harum esse qui aliquam
+              non sit iste rerum amet, eaque reprehenderit perferendis? Culpa
+              suscipit ducimus atque cumque deserunt est adipisci dolorem, ex
+              dolores at? Ratione omnis aperiam corporis ea non aut, rem
+              obcaecati? Velit qui, provident a ut blanditiis soluta deleniti
+              dolores praesentium maxime dignissimos saepe voluptate sapiente
+              reprehenderit eius fugiat eligendi doloribus deserunt! Explicabo
+              est eos fugit labore consectetur esse rem vel, fuga nobis deleniti
+              at nulla officiis, nesciunt similique eveniet veritatis
+              perferendis cumque perspiciatis architecto cupiditate aspernatur,
+              maxime velit. Quae, molestiae magnam. Tempore, dicta veritatis
+              nobis iste delectus animi placeat saepe quia ipsa nesciunt eaque
+              velit quisquam ipsam architecto, vel quos consequuntur nihil eius
+              voluptatem id, numquam sunt atque. Corporis, vel alias. Pariatur
+              veritatis libero vitae illo facere tenetur mollitia! Ducimus
+              pariatur cum quia placeat, non nihil modi nisi alias ab minus
+              vitae ut eligendi aut officia, voluptates impedit, doloremque
+              beatae est? Quis fugit ut inventore itaque quasi sed, corporis
+              blanditiis non commodi repudiandae aspernatur quia similique, ad,
+              sequi porro! Vel voluptatem suscipit ut quasi est harum quidem
+              ipsa ipsum, vitae quaerat? Commodi facere quaerat adipisci
+              deleniti officia excepturi illo laudantium a omnis incidunt culpa,
+              ullam corrupti delectus quos reprehenderit facilis consequatur
+              fugit quam odit sint non sit eos! Corporis, quia iure. Architecto
+              cupiditate harum fugit iure sit officia. Quasi aspernatur dicta
+              doloremque aliquam nemo reprehenderit corporis? Expedita voluptas
+              doloribus ab numquam! Eius aliquam non dolorum fugit quas sapiente
+              eaque quam vero.
+            </p>
+          </section>
+          <section class="section3 col-12">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Exercitationem, ad modi. Eaque soluta velit sapiente itaque sunt
+              ducimus amet quis aliquam provident! Placeat animi quis ipsum
+              doloremque cupiditate nisi cumque. Doloremque, atque harum cumque
+              aperiam eum perferendis eveniet facilis sint tempore placeat, rem
+              dolorem tempora? Nam ducimus quibusdam laudantium quae voluptates
+              aperiam cumque, voluptatibus natus adipisci ea facere id iste? Est
+              nostrum perspiciatis assumenda illo libero harum esse qui aliquam
+              non sit iste rerum amet, eaque reprehenderit perferendis? Culpa
+              suscipit ducimus atque cumque deserunt est adipisci dolorem, ex
+              dolores at? Ratione omnis aperiam corporis ea non aut, rem
+              obcaecati? Velit qui, provident a ut blanditiis soluta deleniti
+              dolores praesentium maxime dignissimos saepe voluptate sapiente
+              reprehenderit eius fugiat eligendi doloribus deserunt! Explicabo
+              est eos fugit labore consectetur esse rem vel, fuga nobis deleniti
+              at nulla officiis, nesciunt similique eveniet veritatis
+              perferendis cumque perspiciatis architecto cupiditate aspernatur,
+              maxime velit. Quae, molestiae magnam. Tempore, dicta veritatis
+              nobis iste delectus animi placeat saepe quia ipsa nesciunt eaque
+              velit quisquam ipsam architecto, vel quos consequuntur nihil eius
+              voluptatem id, numquam sunt atque. Corporis, vel alias. Pariatur
+              veritatis libero vitae illo facere tenetur mollitia! Ducimus
+              pariatur cum quia placeat, non nihil modi nisi alias ab minus
+              vitae ut eligendi aut officia, voluptates impedit, doloremque
+              beatae est? Quis fugit ut inventore itaque quasi sed, corporis
+              blanditiis non commodi repudiandae aspernatur quia similique, ad,
+              sequi porro! Vel voluptatem suscipit ut quasi est harum quidem
+              ipsa ipsum, vitae quaerat? Commodi facere quaerat adipisci
+              deleniti officia excepturi illo laudantium a omnis incidunt culpa,
+              ullam corrupti delectus quos reprehenderit facilis consequatur
+              fugit quam odit sint non sit eos! Corporis, quia iure. Architecto
+              cupiditate harum fugit iure sit officia. Quasi aspernatur dicta
+              doloremque aliquam nemo reprehenderit corporis? Expedita voluptas
+              doloribus ab numquam! Eius aliquam non dolorum fugit quas sapiente
+              eaque quam vero.
+            </p>
+          </section>
+        </div>
+      </div>
     </main>
   </body>
 </html>
