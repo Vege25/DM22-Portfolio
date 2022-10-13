@@ -1,5 +1,5 @@
 // Your variable overrides
-$body-bg: rgb(255, 255, 255);
+$body-bg: #fff;
 $primarycol-1: #642ca9;
 $primarycol-2: #ca9ce1;
 $primarycol-3: #f2befc;
@@ -12,10 +12,10 @@ $body-color: #111;
   font-family: defFont;
   src: url(fonts/Lato-Regular.ttf);
 }
-@font-face {
+/*@font-face {
   font-family: regNunito;
   src: url(fonts/Nunito-Regular.ttf);
-}
+}*/
 @font-face {
   font-family: boldNunito;
   src: url(fonts/Nunito-ExtraBold.ttf);
@@ -27,23 +27,44 @@ $body-color: #111;
 
 body {
   background-color: $body-bg;
+  //font-family: regNunito, sans-serif;
   aside {
-    text-align: center;
-    background-color: green;
-    hr {
+    /*hr {
       color: $primarycol-3;
       background-color: $primarycol-3;
       border: 2px solid;
       border-radius: 7px 7px 7px 7px;
       height: 2px;
       opacity: 1;
-    }
+    }*/
+    .navbar {
+      width: 250px;
+      height: 100vh;
+      position: fixed;
+      margin-left: -300px;
+      background-color: $primarycol-1;
+      transition: 0.4s;
 
-    ul {
-      li {
-        margin-bottom: 1rem;
-        font-size: 1.25rem;
+      .a {
+        align-items: center;
+        justify-content: center;
+        margin: 0px;
+        h2 {
+          //font-family: boldNunito, sans-serif;
+          font-size: 10px;
+        }
       }
+      .dropdown-menu {
+        background-color: $primarycol-1;
+      }
+      .dropdown-item:active,
+      .dropdown-item:focus,
+      .dropdown-menu:hover {
+        background-color: $primarycol-2;
+      }
+    }
+    .active-nav {
+      margin-left: 0;
     }
   }
   //---------------------------------------------------------------------------------------//
@@ -83,7 +104,10 @@ body {
   //------------------------------------------------------------------------------------------//
 
   main {
-    background-color: red;
+    transition: 0.4s;
+  }
+  .active-cont {
+    margin-left: 250px;
   }
 
   #profilePic {
@@ -98,7 +122,17 @@ body {
 
 .nav-link {
   color: white;
+  font-size: 1.25rem;
 }
+.nav-link:active,
+.nav-link:focus,
 .nav-link:hover {
-  color: $primarycol-3;
+  background-color: $primarycol-2;
+}
+#side-menu-btn {
+  background-color: $primarycol-1;
+  color: #fff;
+}
+#side-menu-btn:hover {
+  box-shadow: 0 0 0 0.25rem #4f2474;
 }
