@@ -50,3 +50,27 @@ if ($("#side-menu-btn") != null) {
     }
   );
 }
+
+// Task section controller
+$("#n1-task-1").on("click", () => {
+  $("html, body").animate(
+    {
+      scrollTop: $("#section-2-title").offset().top - 25,
+    },
+    50
+  );
+});
+$("#n2-task-1").on("click", () => {
+  toggleNavBar2();
+  $("html, body").animate(
+    {
+      scrollTop: $("#section-2-title").offset().top - 100,
+    },
+    50
+  );
+});
+
+function toggleNavBar2() {
+  $("#navbarSupportedContent").toggleClass("show");
+  $(".navbar-toggler").toggleClass("collapsed");
+}

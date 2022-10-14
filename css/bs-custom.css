@@ -8408,7 +8408,6 @@ body {
   background-color: #333333;
   font-family: regNunito, sans-serif; }
   body aside .navbar {
-    width: 250px;
     height: 100vh;
     position: fixed;
     margin-left: -300px;
@@ -8599,41 +8598,52 @@ body {
         max-width: 80%;
         margin-left: 10%;
         margin-right: auto; }
+        body main .section2 .card .card-body:hover {
+          box-shadow: 0px 0px 10px 6px #f2befc; }
         body main .section2 .card .card-body {
           background-color: #333333;
+          transition: 0.4s;
           background: #6e2594;
           background: linear-gradient(120deg, #6e2594 0%, #f2befc 100%);
           box-shadow: 0px 0px 9px 3px #f2befc;
           border-radius: 15px;
-          padding: 3rem;
+          padding: 2rem;
           /*outline-style: solid;
           outline-color: $primarycol-3;
           outline-width: 3px;*/ }
-          body main .section2 .card .card-body .info {
-            justify-content: center; }
-            body main .section2 .card .card-body .info h5, body main .section2 .card .card-body .info .h5 {
-              font-size: 4vw;
-              font-family: medUbuntu, sans-serif; }
-            body main .section2 .card .card-body .info p {
-              font-size: 2vw; }
-      body main .section2 .visit-site-btn {
-        text-align: center;
-        width: 20%;
-        margin-left: 40%;
-        margin-right: auto;
-        background-color: #ca9ce1;
-        margin-top: 2rem;
-        transition: 0.3s;
-        height: 3rem;
-        font-size: 1.5vw; }
-      body main .section2 .visit-site-btn:hover {
-        width: 30%;
-        margin-left: 35%;
-        margin-right: auto;
-        height: 4.5rem;
-        font-size: 2vw; }
-  body .active-cont {
-    margin-left: 250px; }
+          body main .section2 .card .card-body .holder .info h5, body main .section2 .card .card-body .holder .info .h5 {
+            margin: 0;
+            text-align: center;
+            font-size: 5vw;
+            font-family: medUbuntu, sans-serif; }
+          body main .section2 .card .card-body .holder a .screen-img {
+            transition: 0.3s;
+            width: 98%;
+            margin-left: 1%;
+            margin-top: 1%;
+            margin-bottom: 1%;
+            margin-right: auto; }
+          body main .section2 .card .card-body .holder a .screen-img:hover {
+            cursor: pointer;
+            width: 100%;
+            margin-left: 0%;
+            margin-top: 0%;
+            margin-bottom: 0%;
+            margin-right: auto; }
+      body main .section2 .button-container {
+        padding: 0 30%; }
+        body main .section2 .button-container .visit-site-btn {
+          align-self: center;
+          width: 100%;
+          background-color: #ca9ce1;
+          color: #fff;
+          margin-top: 2rem;
+          transition: 0.3s;
+          height: 10vh;
+          font-weight: bold;
+          font-family: medUbuntu, sans-serif; }
+        body main .section2 .button-container .visit-site-btn:hover {
+          box-shadow: 0px 0px 9px 3px #f2befc; }
 
 .nav-link {
   color: white;
@@ -8651,3 +8661,32 @@ body {
 
 #side-menu-btn:hover {
   box-shadow: 0 0 0 0.25rem #95679a; }
+
+@media (max-width: 575px) {
+  .section2 .button-container .visit-site-btn {
+    font-size: 3vw; }
+  .section2 .button-container .visit-site-btn:hover {
+    box-shadow: 0px 0px 9px 3px #f2befc;
+    font-size: 4vw; } }
+
+@media (min-width: 576px) {
+  aside .navbar {
+    width: 200px !important; }
+  .active-cont {
+    margin-left: 200px !important; }
+  .section2 .button-container .visit-site-btn {
+    font-size: 2.5vw; }
+  .section2 .button-container .visit-site-btn:hover {
+    box-shadow: 0px 0px 9px 3px #f2befc;
+    font-size: 3vw; } }
+
+@media (min-width: 768px) {
+  aside .navbar {
+    width: 250px !important; }
+  .active-cont {
+    margin-left: 250px !important; }
+  .section2 .button-container .visit-site-btn {
+    font-size: 2.5vw; }
+  .section2 .button-container .visit-site-btn:hover {
+    box-shadow: 0px 0px 9px 3px #f2befc;
+    font-size: 3vw; } }
