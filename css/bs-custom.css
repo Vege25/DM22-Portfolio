@@ -8469,6 +8469,7 @@ body {
     outline-style: solid;
     outline-color: #f2befc; }
   body header .navbar {
+    z-index: 1;
     background-color: #333333;
     position: fixed;
     width: 100%;
@@ -8526,6 +8527,7 @@ body {
     transition: 0.4s;
     color: #fff; }
     body main .menu-button-container button {
+      z-index: 1;
       margin-left: 15px;
       position: fixed;
       height: 5rem;
@@ -8580,11 +8582,56 @@ body {
       opacity: 1;
       width: 100%;
       box-shadow: 0px 0px 9px 3px #f2befc; }
-    body main .container-fluid, body main .container-sm, body main .container-md, body main .container-lg, body main .container-xl, body main .container-xxl {
-      padding: 3rem; }
+    body main .task-content h2, body main .task-content .h2 {
+      text-align: center;
+      font-size: 7vw;
+      font-family: medUbuntu, sans-serif;
+      margin-bottom: 10vh;
+      margin-top: 30vh; }
     body main .section2 {
-      background-color: #333333;
-      padding-top: 0px; }
+      background-color: #000;
+      padding-top: 0px;
+      padding: 0rem 3rem 3rem 3rem; }
+      body main .section2 .card {
+        border-radius: 15px;
+        background-color: rgba(0, 0, 0, 0);
+        margin: 0rem 1rem;
+        max-width: 80%;
+        margin-left: 10%;
+        margin-right: auto; }
+        body main .section2 .card .card-body {
+          background-color: #333333;
+          background: #6e2594;
+          background: linear-gradient(120deg, #6e2594 0%, #f2befc 100%);
+          box-shadow: 0px 0px 9px 3px #f2befc;
+          border-radius: 15px;
+          padding: 3rem;
+          /*outline-style: solid;
+          outline-color: $primarycol-3;
+          outline-width: 3px;*/ }
+          body main .section2 .card .card-body .info {
+            justify-content: center; }
+            body main .section2 .card .card-body .info h5, body main .section2 .card .card-body .info .h5 {
+              font-size: 4vw;
+              font-family: medUbuntu, sans-serif; }
+            body main .section2 .card .card-body .info p {
+              font-size: 2vw; }
+      body main .section2 .visit-site-btn {
+        text-align: center;
+        width: 20%;
+        margin-left: 40%;
+        margin-right: auto;
+        background-color: #ca9ce1;
+        margin-top: 2rem;
+        transition: 0.3s;
+        height: 3rem;
+        font-size: 1.5vw; }
+      body main .section2 .visit-site-btn:hover {
+        width: 30%;
+        margin-left: 35%;
+        margin-right: auto;
+        height: 4.5rem;
+        font-size: 2vw; }
   body .active-cont {
     margin-left: 250px; }
 
