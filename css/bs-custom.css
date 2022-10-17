@@ -8616,6 +8616,9 @@ body {
             text-align: center;
             font-size: 5vw;
             font-family: medUbuntu, sans-serif; }
+          body main .section2 .card .card-body .holder .info p {
+            text-align: center;
+            font-size: 3vw; }
           body main .section2 .card .card-body .holder a .screen-img {
             transition: 0.3s;
             width: 98%;
@@ -8644,6 +8647,51 @@ body {
           font-family: medUbuntu, sans-serif; }
         body main .section2 .button-container .visit-site-btn:hover {
           box-shadow: 0px 0px 9px 3px #f2befc; }
+  body .section3 {
+    background-color: #000;
+    padding-top: 15vh;
+    padding-bottom: 20vh; }
+    body .section3 .card {
+      background-color: rgba(0, 0, 0, 0);
+      max-width: 80%;
+      margin-left: 10%;
+      margin-right: auto;
+      height: 250px;
+      text-align: center; }
+      body .section3 .card .card-img-top {
+        padding: 2rem;
+        border-radius: 40px; }
+      body .section3 .card .card-body {
+        background-color: #333333;
+        border-radius: 15px;
+        outline-color: #606060;
+        outline-style: solid;
+        outline-width: 3px;
+        transition: 0.4s;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center; }
+        body .section3 .card .card-body .card-title {
+          font-weight: bold;
+          font-family: medUbuntu, sans-serif;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent; }
+      body .section3 .card .card-body:hover {
+        cursor: pointer; }
+    body .section3 .query-4-text {
+      background: -webkit-linear-gradient(135deg, #009ffd 0%, #81f4e1 100%); }
+    body .section3 .query-4:hover {
+      box-shadow: 0px 0px 9px 3px #009ffd; }
+    body .section3 .query-5-text {
+      background: -webkit-linear-gradient(135deg, #40f99b 0%, #c8ffbe 100%); }
+    body .section3 .query-5:hover {
+      box-shadow: 0px 0px 9px 3px #c8ffbe; }
+    body .section3 .query-a-text {
+      background: -webkit-linear-gradient(135deg, #d5b942 0%, #f6f930 100%); }
+    body .section3 .query-a:hover {
+      box-shadow: 0px 0px 9px 3px #f6f930; }
 
 .nav-link {
   color: white;
@@ -8667,7 +8715,13 @@ body {
     font-size: 3vw; }
   .section2 .button-container .visit-site-btn:hover {
     box-shadow: 0px 0px 9px 3px #f2befc;
-    font-size: 4vw; } }
+    font-size: 4vw; }
+  .section3 .card-title {
+    font-size: 30px; }
+    .section3 .card-title span {
+      font-size: 40px; }
+  .section3 .card-big-col {
+    padding-top: 3rem; } }
 
 @media (min-width: 576px) {
   aside .navbar {
@@ -8678,7 +8732,13 @@ body {
     font-size: 2.5vw; }
   .section2 .button-container .visit-site-btn:hover {
     box-shadow: 0px 0px 9px 3px #f2befc;
-    font-size: 3vw; } }
+    font-size: 3vw; }
+  .section3 .card-title {
+    font-size: 38px; }
+    .section3 .card-title span {
+      font-size: 55px; }
+  .section3 .card-big-col {
+    padding-top: 3rem; } }
 
 @media (min-width: 768px) {
   aside .navbar {
@@ -8689,4 +8749,34 @@ body {
     font-size: 2.5vw; }
   .section2 .button-container .visit-site-btn:hover {
     box-shadow: 0px 0px 9px 3px #f2befc;
-    font-size: 3vw; } }
+    font-size: 3vw; }
+  .section3 .card-title {
+    font-size: 50px; }
+    .section3 .card-title span {
+      font-size: 80px; }
+  .section3 .card-big-col {
+    padding-top: 3rem; } }
+
+@media (min-width: 992px) {
+  .section3 .card-big {
+    max-width: 90% !important;
+    margin-left: 5% !important;
+    margin-right: auto !important; }
+  .section3 .card-title {
+    font-size: 45px; }
+    .section3 .card-title span {
+      font-size: 70px; }
+  .section3 .card-big-col {
+    padding-top: 5rem; } }
+
+@media (min-width: 1200px) {
+  .section3 .card-title {
+    font-size: 60px; }
+    .section3 .card-title span {
+      font-size: 90px; }
+  .section3 .card-big-col {
+    padding-top: 5rem; }
+    .section3 .card-big-col .card-title {
+      font-size: 70px; }
+      .section3 .card-big-col .card-title span {
+        font-size: 100px; } }

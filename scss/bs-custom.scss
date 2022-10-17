@@ -314,6 +314,10 @@ body {
                 font-size: 5vw;
                 font-family: medUbuntu, sans-serif;
               }
+              p {
+                text-align: center;
+                font-size: 3vw;
+              }
             }
             a {
               .screen-img {
@@ -355,6 +359,76 @@ body {
       }
     }
   }
+  .section3 {
+    background-color: $body-bg-4;
+    padding-top: 15vh;
+    padding-bottom: 20vh;
+    .card {
+      background-color: rgba(0, 0, 0, 0);
+      max-width: 80%;
+      margin-left: 10%;
+      margin-right: auto;
+      height: 250px;
+      text-align: center;
+      .card-img-top {
+        padding: 2rem;
+        border-radius: 40px;
+      }
+      .card-body {
+        background-color: $body-bg-2;
+        border-radius: 15px;
+        outline-color: $body-bg-3;
+        outline-style: solid;
+        outline-width: 3px;
+        transition: 0.4s;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        .card-title {
+          font-weight: bold;
+          font-family: medUbuntu, sans-serif;
+
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+      .card-body:hover {
+        cursor: pointer;
+      }
+    }
+    .query-4-text {
+      background: -webkit-linear-gradient(
+        135deg,
+        rgba(0, 159, 253, 1) 0%,
+        rgba(129, 244, 225, 1) 100%
+      );
+    }
+    .query-4:hover {
+      box-shadow: 0px 0px 9px 3px rgba(0, 159, 253, 1);
+    }
+    .query-5-text {
+      background: -webkit-linear-gradient(
+        135deg,
+        rgba(64, 249, 155, 1) 0%,
+        rgba(200, 255, 190, 1) 100%
+      );
+    }
+    .query-5:hover {
+      box-shadow: 0px 0px 9px 3px rgba(200, 255, 190, 1);
+    }
+    .query-a-text {
+      background: -webkit-linear-gradient(
+        135deg,
+        rgba(213, 185, 66, 1) 0%,
+        rgba(246, 249, 48, 1) 100%
+      );
+    }
+    .query-a:hover {
+      box-shadow: 0px 0px 9px 3px rgba(246, 249, 48, 1);
+    }
+  }
   .active-cont {
     //margin-left: 250px;
   }
@@ -390,6 +464,17 @@ body {
       }
     }
   }
+  .section3 {
+    .card-title {
+      font-size: 30px;
+      span {
+        font-size: 40px;
+      }
+    }
+    .card-big-col {
+      padding-top: 3rem;
+    }
+  }
 }
 @media (min-width: 576px) {
   //sm
@@ -412,6 +497,17 @@ body {
       }
     }
   }
+  .section3 {
+    .card-title {
+      font-size: 38px;
+      span {
+        font-size: 55px;
+      }
+    }
+    .card-big-col {
+      padding-top: 3rem;
+    }
+  }
 }
 @media (min-width: 768px) {
   //lg
@@ -431,6 +527,56 @@ body {
       .visit-site-btn:hover {
         box-shadow: 0px 0px 9px 3px #f2befc;
         font-size: 3vw;
+      }
+    }
+  }
+  .section3 {
+    .card-title {
+      font-size: 50px;
+      span {
+        font-size: 80px;
+      }
+    }
+    .card-big-col {
+      padding-top: 3rem;
+    }
+  }
+}
+@media (min-width: 992px) {
+  .section3 {
+    .card-big {
+      max-width: 90% !important;
+      margin-left: 5% !important;
+      margin-right: auto !important;
+    }
+    .card-title {
+      font-size: 45px;
+      span {
+        font-size: 70px;
+      }
+    }
+    .card-big-col {
+      padding-top: 5rem;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  //XL
+  .section3 {
+    .card-title {
+      font-size: 60px;
+      span {
+        font-size: 90px;
+      }
+    }
+    .card-big-col {
+      padding-top: 5rem;
+      .card-title {
+        font-size: 70px;
+        span {
+          font-size: 100px;
+        }
       }
     }
   }
