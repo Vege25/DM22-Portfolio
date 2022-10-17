@@ -8477,6 +8477,8 @@ body {
     padding: 1rem;
     padding-bottom: 0rem;
     box-shadow: 0px 0px 9px 3px #f2befc; }
+    body header .navbar .container-fluid, body header .navbar .container-sm, body header .navbar .container-md, body header .navbar .container-lg, body header .navbar .container-xl, body header .navbar .container-xxl {
+      justify-content: center; }
   body header hr {
     width: 100%;
     color: #f2befc;
@@ -8516,6 +8518,8 @@ body {
       width: 40px;
       height: 40px;
       transition: 0.3s; }
+  body header .navbar-toggler:focus {
+    box-shadow: none !important; }
   body header .navbar-toggler:hover img {
     transform: scaleY(1.5); }
   body header .navbar-toggler:active {
@@ -8720,15 +8724,34 @@ body {
   box-shadow: 0 0 0 0.25rem #95679a; }
 
 @media (max-width: 575px) {
-  .section2 .button-container .visit-site-btn {
-    font-size: 3vw; }
-  .section2 .button-container .visit-site-btn:hover {
-    box-shadow: 0px 0px 9px 3px #f2befc;
-    font-size: 4vw; }
+  .welcome-section .welcome-texts h3, .welcome-section .welcome-texts .h3 {
+    font-size: 1.5rem !important; }
+  .welcome-section .welcome-texts h2, .welcome-section .welcome-texts .h2 {
+    font-size: 2rem !important; }
+  .welcome-section .welcome-texts h1, .welcome-section .welcome-texts .h1 {
+    font-size: 3rem !important; }
+  .section2 {
+    padding: 0 !important; }
+    .section2 .button-container .visit-site-btn {
+      font-size: 3vw; }
+    .section2 .button-container .visit-site-btn:hover {
+      box-shadow: 0px 0px 9px 3px #f2befc;
+      font-size: 4vw; }
+    .section2 #section-2-title {
+      font-size: 2.5rem !important; }
+    .section2 .info .card-title {
+      font-size: 2rem !important; }
+    .section2 .info p {
+      font-size: 1.5rem !important; }
+    .section2 .visit-site-btn {
+      margin-bottom: 1rem;
+      font-size: 1rem !important; }
+    .section2 .visit-site-btn:hover {
+      font-size: 1.2rem !important; }
   .section3 .card-title {
-    font-size: 30px; }
+    font-size: 40px; }
     .section3 .card-title span {
-      font-size: 40px; }
+      font-size: 65px; }
   .section3 .card-big-col {
     padding-top: 3rem; } }
 

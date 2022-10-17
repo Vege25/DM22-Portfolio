@@ -124,6 +124,9 @@ body {
       padding: 1rem;
       padding-bottom: 0rem;
       box-shadow: 0px 0px 9px 3px $primarycol-3;
+      .container-fluid {
+        justify-content: center;
+      }
     }
     hr {
       width: 100%;
@@ -174,6 +177,9 @@ body {
       border: 0;
       border: none;
       outline: none;
+    }
+    .navbar-toggler:focus {
+      box-shadow: none !important;
     }
     .navbar-toggler:hover {
       img {
@@ -465,7 +471,21 @@ body {
 }
 
 @media (max-width: 575px) {
+  .welcome-section {
+    .welcome-texts {
+      h3 {
+        font-size: 1.5rem !important;
+      }
+      h2 {
+        font-size: 2rem !important;
+      }
+      h1 {
+        font-size: 3rem !important;
+      }
+    }
+  }
   .section2 {
+    padding: 0 !important;
     .button-container {
       .visit-site-btn {
         font-size: 3vw;
@@ -475,12 +495,30 @@ body {
         font-size: 4vw;
       }
     }
+    #section-2-title {
+      font-size: 2.5rem !important;
+    }
+    .info {
+      .card-title {
+        font-size: 2rem !important;
+      }
+      p {
+        font-size: 1.5rem !important;
+      }
+    }
+    .visit-site-btn {
+      margin-bottom: 1rem;
+      font-size: 1rem !important;
+    }
+    .visit-site-btn:hover {
+      font-size: 1.2rem !important;
+    }
   }
   .section3 {
     .card-title {
-      font-size: 30px;
+      font-size: 40px;
       span {
-        font-size: 40px;
+        font-size: 65px;
       }
     }
     .card-big-col {
