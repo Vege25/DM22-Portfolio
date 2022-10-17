@@ -27,7 +27,8 @@
           <img
             id="profilePic"
             class="bi me-3"
-            src="images/4E8A1657 (2).jpg"
+            src="images/profile.jpg"
+            alt="profilePic"
             alt="Profile image"
           />
           <a href="#" class="navbar-brand text-light mt-3 mx-0">
@@ -67,7 +68,7 @@
               </ul>
             </li>
             <li class="nav-item w-100">
-              <a href="#" class="nav-link text-light ps-4">Sisältö 3</a>
+              <a class="nav-link text-light ps-4">Video Sprint II</a>
             </li>
             <li class="nav-item w-100">
               <a href="#" class="nav-link text-light ps-4">Sisältö 4</a>
@@ -85,7 +86,8 @@
               <img
                 id="profilePic"
                 class="bi me-3"
-                src="images/4E8A1657 (2).jpg"
+                src="images/profile.jpg"
+                alt="profilePic"
                 alt="Profile image"
                 width="50"
                 height="50"
@@ -138,7 +140,9 @@
                   </ul>
                 </li>
                 <li class="nav-item w-100">
-                  <a href="#" class="nav-link text-light ps-4">Sisältö 3</a>
+                  <a href="#" class="nav-link text-light ps-4"
+                    >Video Sprint II</a
+                  >
                 </li>
                 <li class="nav-item w-100">
                   <a href="#" class="nav-link text-light ps-4">Sisältö 4</a>
@@ -238,7 +242,33 @@
               </div>
             </div>
           </section>
-          <section class="section4 col-12">
+          <hr class="welcome-hr" />
+          <section class="section4 p-0 col-12">
+            <div class="primary-video">
+              <div class="primary-video-cont">
+                <h2 class="primary-video-title">Video sprint II</h2>
+                <button
+                  class="primary-video-button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#taskModal"
+                  data-title="Video sprint II"
+                  data-videolink="https://www.youtube.com/embed/UKpcSqBXP24"
+                  data-desc="The second video of the video sprint section. We were able to
+                  decide the subject of the video, and we decided to present the
+                  services of the Karamalmi campus."
+                >
+                  Play
+                </button>
+                <div class="primary-video-desc">
+                  The second video of the video sprint section. We were able to
+                  decide the subject of the video, and we decided to present the
+                  services of the Karamalmi campus.
+                </div>
+              </div>
+              <div class="primary-video-bottom-fade"></div>
+            </div>
+          </section>
+          <section class="section5 col-12">
             <p>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
               Exercitationem, ad modi. Eaque soluta velit sapiente itaque sunt
@@ -277,6 +307,40 @@
               eaque quam vero.
             </p>
           </section>
+          <div
+            class="modal fade modal-lg"
+            id="taskModal"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="modalTitleLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modalTitleLabel">Video name</h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe
+                      id="video-element"
+                      class="embed-responsive-item"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                  <div class="modal-desc">text</div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </main>
