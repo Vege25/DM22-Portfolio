@@ -8415,6 +8415,7 @@ body {
     box-shadow: 0 2px 10px 0 #f2befc;
     transition: 0.4s; }
     body aside .navbar #profilePic {
+      object-fit: cover;
       width: 100px;
       height: 100px;
       margin-top: 3rem;
@@ -8461,6 +8462,7 @@ body {
   body header #navbarSupportedContent {
     text-align: center; }
   body header #profilePic {
+    object-fit: cover;
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -8647,51 +8649,58 @@ body {
           font-family: medUbuntu, sans-serif; }
         body main .section2 .button-container .visit-site-btn:hover {
           box-shadow: 0px 0px 9px 3px #f2befc; }
-  body .section3 {
-    background-color: #000;
-    padding-top: 15vh;
-    padding-bottom: 20vh; }
-    body .section3 .card {
-      background-color: rgba(0, 0, 0, 0);
-      max-width: 80%;
-      margin-left: 10%;
-      margin-right: auto;
-      height: 250px;
-      text-align: center; }
-      body .section3 .card .card-img-top {
-        padding: 2rem;
-        border-radius: 40px; }
-      body .section3 .card .card-body {
-        background-color: #333333;
-        border-radius: 15px;
-        outline-color: #606060;
-        outline-style: solid;
-        outline-width: 3px;
-        transition: 0.4s;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    body main .section3 {
+      background-color: #000;
+      padding-top: 15vh;
+      padding-bottom: 20vh; }
+      body main .section3 .card {
+        background-color: rgba(0, 0, 0, 0);
+        max-width: 80%;
+        margin-left: 10%;
+        margin-right: auto;
+        height: 250px;
         text-align: center; }
-        body .section3 .card .card-body .card-title {
-          font-weight: bold;
-          font-family: medUbuntu, sans-serif;
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent; }
-      body .section3 .card .card-body:hover {
-        cursor: pointer; }
-    body .section3 .query-4-text {
-      background: -webkit-linear-gradient(135deg, #009ffd 0%, #81f4e1 100%); }
-    body .section3 .query-4:hover {
-      box-shadow: 0px 0px 9px 3px #009ffd; }
-    body .section3 .query-5-text {
-      background: -webkit-linear-gradient(135deg, #40f99b 0%, #c8ffbe 100%); }
-    body .section3 .query-5:hover {
-      box-shadow: 0px 0px 9px 3px #c8ffbe; }
-    body .section3 .query-a-text {
-      background: -webkit-linear-gradient(135deg, #d5b942 0%, #f6f930 100%); }
-    body .section3 .query-a:hover {
-      box-shadow: 0px 0px 9px 3px #f6f930; }
+        body main .section3 .card .card-img-top {
+          padding: 2rem;
+          border-radius: 40px; }
+        body main .section3 .card .card-body {
+          background-color: #333333;
+          border-radius: 15px;
+          outline-color: #606060;
+          outline-style: solid;
+          outline-width: 3px;
+          transition: 0.4s;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center; }
+          body main .section3 .card .card-body .card-title {
+            font-weight: bold;
+            font-family: medUbuntu, sans-serif;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent; }
+        body main .section3 .card .card-body:hover {
+          cursor: pointer; }
+      body main .section3 .query-4-text {
+        background: -webkit-linear-gradient(135deg, #009ffd 0%, #81f4e1 100%); }
+      body main .section3 .query-4:hover {
+        box-shadow: 0px 0px 9px 3px #009ffd; }
+      body main .section3 .query-5-text {
+        background: -webkit-linear-gradient(135deg, #40f99b 0%, #c8ffbe 100%); }
+      body main .section3 .query-5:hover {
+        box-shadow: 0px 0px 9px 3px #c8ffbe; }
+      body main .section3 .query-a-text {
+        background: -webkit-linear-gradient(135deg, #d5b942 0%, #f6f930 100%); }
+      body main .section3 .query-a:hover {
+        box-shadow: 0px 0px 9px 3px #f6f930; }
+  body .card-reveal {
+    transform: translateY(120px);
+    opacity: 0;
+    transition: all 1s ease; }
+  body .card-reveal.active {
+    transform: translateY(0px);
+    opacity: 1; }
 
 .nav-link {
   color: white;

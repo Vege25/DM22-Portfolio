@@ -46,6 +46,7 @@ body {
       transition: 0.4s;
 
       #profilePic {
+        object-fit: cover;
         width: 100px;
         height: 100px;
         margin-top: 3rem;
@@ -107,6 +108,7 @@ body {
       text-align: center;
     }
     #profilePic {
+      object-fit: cover;
       width: 50px;
       height: 50px;
       border-radius: 50%;
@@ -358,79 +360,89 @@ body {
         }
       }
     }
-  }
-  .section3 {
-    background-color: $body-bg-4;
-    padding-top: 15vh;
-    padding-bottom: 20vh;
-    .card {
-      background-color: rgba(0, 0, 0, 0);
-      max-width: 80%;
-      margin-left: 10%;
-      margin-right: auto;
-      height: 250px;
-      text-align: center;
-      .card-img-top {
-        padding: 2rem;
-        border-radius: 40px;
-      }
-      .card-body {
-        background-color: $body-bg-2;
-        border-radius: 15px;
-        outline-color: $body-bg-3;
-        outline-style: solid;
-        outline-width: 3px;
-        transition: 0.4s;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    .section3 {
+      background-color: $body-bg-4;
+      padding-top: 15vh;
+      padding-bottom: 20vh;
+      .card {
+        background-color: rgba(0, 0, 0, 0);
+        max-width: 80%;
+        margin-left: 10%;
+        margin-right: auto;
+        height: 250px;
         text-align: center;
-        .card-title {
-          font-weight: bold;
-          font-family: medUbuntu, sans-serif;
+        .card-img-top {
+          padding: 2rem;
+          border-radius: 40px;
+        }
+        .card-body {
+          background-color: $body-bg-2;
+          border-radius: 15px;
+          outline-color: $body-bg-3;
+          outline-style: solid;
+          outline-width: 3px;
+          transition: 0.4s;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          .card-title {
+            font-weight: bold;
+            font-family: medUbuntu, sans-serif;
 
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+        }
+        .card-body:hover {
+          cursor: pointer;
         }
       }
-      .card-body:hover {
-        cursor: pointer;
+      .query-4-text {
+        background: -webkit-linear-gradient(
+          135deg,
+          rgba(0, 159, 253, 1) 0%,
+          rgba(129, 244, 225, 1) 100%
+        );
+      }
+      .query-4:hover {
+        box-shadow: 0px 0px 9px 3px rgba(0, 159, 253, 1);
+      }
+      .query-5-text {
+        background: -webkit-linear-gradient(
+          135deg,
+          rgba(64, 249, 155, 1) 0%,
+          rgba(200, 255, 190, 1) 100%
+        );
+      }
+      .query-5:hover {
+        box-shadow: 0px 0px 9px 3px rgba(200, 255, 190, 1);
+      }
+      .query-a-text {
+        background: -webkit-linear-gradient(
+          135deg,
+          rgba(213, 185, 66, 1) 0%,
+          rgba(246, 249, 48, 1) 100%
+        );
+      }
+      .query-a:hover {
+        box-shadow: 0px 0px 9px 3px rgba(246, 249, 48, 1);
       }
     }
-    .query-4-text {
-      background: -webkit-linear-gradient(
-        135deg,
-        rgba(0, 159, 253, 1) 0%,
-        rgba(129, 244, 225, 1) 100%
-      );
-    }
-    .query-4:hover {
-      box-shadow: 0px 0px 9px 3px rgba(0, 159, 253, 1);
-    }
-    .query-5-text {
-      background: -webkit-linear-gradient(
-        135deg,
-        rgba(64, 249, 155, 1) 0%,
-        rgba(200, 255, 190, 1) 100%
-      );
-    }
-    .query-5:hover {
-      box-shadow: 0px 0px 9px 3px rgba(200, 255, 190, 1);
-    }
-    .query-a-text {
-      background: -webkit-linear-gradient(
-        135deg,
-        rgba(213, 185, 66, 1) 0%,
-        rgba(246, 249, 48, 1) 100%
-      );
-    }
-    .query-a:hover {
-      box-shadow: 0px 0px 9px 3px rgba(246, 249, 48, 1);
-    }
   }
+
   .active-cont {
     //margin-left: 250px;
+  }
+  .card-reveal {
+    transform: translateY(120px);
+    opacity: 0;
+    transition: all 1s ease;
+  }
+  .card-reveal.active {
+    transform: translateY(0px);
+    opacity: 1;
   }
 }
 

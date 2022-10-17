@@ -52,29 +52,59 @@ function scrollToTask() {
 
   //Second task
   $("#n1-task-2").on("click", () => {
-    scrollToElement($(".query-4"), 40);
+    if ($(".query-4").parent().hasClass("active")) {
+      // if it is not active its position is not same
+      scrollToElement($(".query-4"), 40);
+      return;
+    }
+    scrollToElement($(".query-4"), 40 + 120);
   });
   $("#n2-task-2").on("click", () => {
     toggleNavBar2(); // Hide 2nd  navigation when navigation is clicked
+    if ($(".query-4").parent().hasClass("active")) {
+      // if it is not active its position is not same
+      scrollToElement($(".section3"), 25);
+      return;
+    }
     scrollToElement($(".section3"), 25);
   });
 
   //Third task
   $("#n1-task-3").on("click", () => {
-    scrollToElement($(".query-5"), 40);
+    if ($(".query-5").parent().hasClass("active")) {
+      // if it is not active its position is not same
+      scrollToElement($(".query-5"), 40);
+      return;
+    }
+    scrollToElement($(".query-5"), 40 + 120);
   });
   $("#n2-task-3").on("click", () => {
     toggleNavBar2(); // Hide 2nd  navigation when navigation is clicked
-    scrollToElement($(".query-5"), 125);
+    if ($(".query-5").parent().hasClass("active")) {
+      // if it is not active its position is not same
+      scrollToElement($(".query-5"), 125);
+      return;
+    }
+    scrollToElement($(".query-5"), 125 + 120);
   });
 
   //Fourth task
   $("#n1-task-4").on("click", () => {
-    scrollToElement($(".query-a"), 40);
+    if ($(".query-a").parent().hasClass("active")) {
+      // if it is not active its position is not same
+      scrollToElement($(".query-a"), 40);
+      return;
+    }
+    scrollToElement($(".query-a"), 40 + 120);
   });
   $("#n2-task-4").on("click", () => {
     toggleNavBar2(); // Hide 2nd  navigation when navigation is clicked
-    scrollToElement($(".query-a"), 125);
+    if ($(".query-a").parent().hasClass("active")) {
+      // if it is not active its position is not same
+      scrollToElement($(".query-a"), 125);
+      return;
+    }
+    scrollToElement($(".query-a"), 125 + 120);
   });
 }
 
