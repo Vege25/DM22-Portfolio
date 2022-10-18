@@ -8515,8 +8515,8 @@ body {
     border: none;
     outline: none; }
     body header .navbar-toggler img {
-      width: 40px;
-      height: 40px;
+      width: 37px;
+      height: 37px;
       transition: 0.3s; }
   body header .navbar-toggler:focus {
     box-shadow: none !important; }
@@ -8597,6 +8597,9 @@ body {
       background-color: #000;
       padding-top: 0px;
       padding: 0rem 3rem 3rem 3rem; }
+      body main .section2 .row {
+        width: 100%;
+        margin: 0; }
       body main .section2 .card {
         border-radius: 15px;
         background-color: rgba(0, 0, 0, 0);
@@ -8657,6 +8660,9 @@ body {
       background-color: #000;
       padding-top: 15vh;
       padding-bottom: 20vh; }
+      body main .section3 .row {
+        width: 100%;
+        margin: 0; }
       body main .section3 .card {
         background-color: rgba(0, 0, 0, 0);
         max-width: 80%;
@@ -8762,10 +8768,60 @@ body {
     transform: translateY(0px);
     opacity: 1; }
   body .modal-content {
-    background-color: #333333; }
-    body .modal-content iframe {
-      width: 100%;
-      height: 420px; }
+    background-color: #333333;
+    border-radius: 10px; }
+    body .modal-content .modal-header {
+      border-color: #f2befc;
+      border-width: 2px;
+      padding: 0; }
+      body .modal-content .modal-header .embed-responsive {
+        width: 100%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px; }
+        body .modal-content .modal-header .embed-responsive iframe {
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+          width: 100%;
+          height: 300px; }
+      body .modal-content .modal-header .primary-video-bottom-fade {
+        position: absolute;
+        pointer-events: none;
+        width: 100%;
+        margin-top: 189px;
+        height: 7.4rem;
+        background-image: linear-gradient(180deg, transparent, rgba(37, 37, 37, 0.61), #ca9ce1); }
+    body .modal-content .modal-body {
+      padding: 1.5rem;
+      padding-top: 1rem; }
+      body .modal-content .modal-body .modal-body-header {
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0; }
+        body .modal-content .modal-body .modal-body-header .modal-title {
+          font-size: 1.5rem;
+          font-family: medUbuntu, sans-serif;
+          width: auto;
+          padding: 0; }
+        body .modal-content .modal-body .modal-body-header button {
+          width: 45px;
+          height: 45px;
+          cursor: pointer;
+          color: #fff;
+          outline: none;
+          border: none;
+          border-radius: 10px;
+          background-color: #ca9ce1;
+          transition: 0.3s; }
+          body .modal-content .modal-body .modal-body-header button span {
+            font-family: medUbuntu, sans-serif;
+            font-size: 1.5rem; }
+        body .modal-content .modal-body .modal-body-header button:hover {
+          box-shadow: 0px 0px 5px 2px #f2befc; }
+      body .modal-content .modal-body .modal-desc {
+        margin-top: 1.5rem;
+        font-size: 1rem;
+        font-weight: 100; }
 
 .nav-link {
   color: white;
@@ -8816,7 +8872,16 @@ body {
   .section3 .card-big-col {
     padding-top: 3rem; }
   .section4 .primary-video .primary-video-cont .primary-video-title {
-    font-size: 10vw !important; } }
+    font-size: 10vw !important; }
+  .modal-content .modal-header iframe {
+    height: 200px !important; }
+  .modal-content .modal-header .primary-video-bottom-fade {
+    margin-top: 122px !important;
+    height: 5.4rem !important; }
+  .modal-content .modal-body {
+    padding: 1rem !important; }
+    .modal-content .modal-body .modal-desc {
+      margin-top: 1rem; } }
 
 @media (min-width: 576px) {
   aside .navbar {

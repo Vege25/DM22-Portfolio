@@ -17,14 +17,15 @@ $("#query-5").on("click", () => {
 $("#query-a").on("click", () => {
   window.location = "https://users.metropolia.fi/~veetiso/DM-22/AJAX/haku.html";
 });
-
-$("#taskModal").on("show.bs.modal", function (event) {
-  let button = $(event.relatedTarget); // Button that triggered the modal
-  let title = button.data("title");
-  let link = button.data("videolink"); // Extract info from data-* attributes
-  let description = button.data("desc");
-  let modal = $(this);
-  modal.find("#video-element").attr("src", link);
-  modal.find(".modal-desc").text(description);
-  modal.find(".modal-title").text(title);
-});
+if ($("#taskModal") != null) {
+  $("#taskModal").on("show.bs.modal", function (event) {
+    let button = $(event.relatedTarget); // Button that triggered the modal
+    let title = button.data("title");
+    let link = button.data("videolink"); // Extract info from data-* attributes
+    let description = button.data("desc");
+    let modal = $(this);
+    modal.find("#video-element").attr("src", link);
+    modal.find(".modal-desc").text(description);
+    modal.find(".modal-title").text(title);
+  });
+}
